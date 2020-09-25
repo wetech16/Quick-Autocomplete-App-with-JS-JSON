@@ -2,12 +2,12 @@
 
 ## html
 
-    - index.html
-        - css { bootstrap.min.css }
-        - icon { fontawesome }
-        - input { id="search" }
-        - div { id="match-list" }
-        - script { js/main.js }
+- index.html
+  - css { bootstrap.min.css }
+  - icon { fontawesome }
+  - input { id="search" }
+  - div { id="match-list" }
+  - script { js/main.js }
 
 ---
 
@@ -16,7 +16,7 @@
 ## JS
 
     - main.js
-        -search { getElementById { search } } }
+        - search { getElementById { search } } }
             - addEventListener { input, searchStates { search.value } }
                  - searchStates { async searchText }
                     - res { await fetch { DATA } }
