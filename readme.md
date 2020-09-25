@@ -15,30 +15,30 @@
 
 ## JS
 
-    - main.js
-        - search { getElementById { search } } }
-            - addEventListener { input, searchStates { search.value } }
-                 - searchStates { async searchText }
-                    - res { await fetch { DATA } }
-                    - states { await res.json() }
-                    - matches { states }
-                        - filter { state }
-                            - regex { RegExp{`^${ searchText }`, 'gi' } }
-                            - return state
-                                - name.match { regex }
-                                - abbr.match { regex }
-                    - if { searchText.length }
-                        - matches
-                        - matchList.innerHTML
-                    - outputHtml { matches }
-                        - html { matches }
-                            - map
-                                - h4 { match.,name, match.captical, etc }
-                                - <small>Lat { match.lat, etc }
+- main.js
+  - search { getElementById { search } } }
+    - addEventListener { input, searchStates { search.value } }
+      - searchStates { async searchText }
+      - res { await fetch { DATA } }
+      - states { await res.json() }
+      - matches { states }
+        - filter { state }
+          - regex { RegExp{`^${ searchText }`, 'gi' } }
+          - return state
+            - name.match { regex }
+            - abbr.match { regex }
+      - if { searchText.length }
+        - matches
+        - matchList.innerHTML
+      - outputHtml { matches }
+        - html { matches }
+          - map
+            - h4 { match.,name, match.captical, etc }
+            - <small>Lat { match.lat, etc }
 
 ## CSS
 
-    - bootstrap.min.css
+- bootstrap.min.css
 
 ---
 
@@ -46,4 +46,4 @@
 
 ## DATA
 
-    - states.json
+- states.json
